@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide/Show Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            display: inline-block;
+            text-align: center;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <hz1> <p>Solutions for gender equality</p>
+    </hz1>
+    </body> <p>campaigning(introducing comfort woman to the society)
+
+    -spread information regarding to the comfort woman on social media/internet
+
+    Open discussions to the victims of gender discrimination in order to gain their insights and perspectives regarding the situation.<br></br></p><hz2> <p> </p>
+    </hz2>
+    <div class="container">
+        <button id="toggleButton">Hide Image</button>
+        <img id="imageToToggle" src="Screenshot 2024-12-11 204221.png" alt="Example Image">
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const image = document.getElementById('imageToToggle');
+
+        toggleButton.addEventListener('click', () => {
+            if (image.style.display === 'none') {
+                image.style.display = 'block';
+                toggleButton.textContent = 'Hide Image';
+            } else {
+                image.style.display = 'none';
+                toggleButton.textContent = 'Show Image';
+            }
+        });
+    </script>
+</body>
+</html>
